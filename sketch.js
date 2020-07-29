@@ -17,7 +17,7 @@ function setup() {
 	engine = Engine.create();
 	world = engine.world;
 
-	Paper1= new PaperClass(200,500,50,PI/2)
+	Paper1= new PaperClass(200,500,20,PI/2)
 	Ground1= new Ground(650,680,1300,20)
 
 	bottomSprite=createSprite(950,650,200,18)
@@ -49,7 +49,6 @@ function draw() {
   //rectMode(CENTER);
   background(0);
 
-  keyPressed()
   
   Paper1.display()
   Ground1.display()
@@ -60,7 +59,7 @@ function draw() {
 
 function keyPressed(){
 	if(keyCode===UP_ARROW){
-		Body.applyForce(Paper1.body,Paper1.body.position,{x:35,y:-35})
+		Body.applyForce(Paper1.body,Paper1.body.position,{x:85,y:-65})
 	}
 }
 

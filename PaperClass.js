@@ -12,6 +12,7 @@ class PaperClass{
         World.add(world, this.body)
     }
     display(){
+        ellipseMode(RADIUS)
         var pos =this.body.position;
         var angle = this.body.angle;
         push();
@@ -20,7 +21,7 @@ class PaperClass{
         strokeWeight(5)
         stroke("yellow")
         fill("blue");
-        circle(0,0,this.radius)
+        ellipse(0,0,this.radius,this.radius)
         pop()
       }
 }
