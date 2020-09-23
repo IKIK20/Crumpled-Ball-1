@@ -8,7 +8,7 @@ var engine, world;
 var bottomSprite,lsideSprite,rsideSprite,bottom,lside,rside,bottomImg;
 
 function preload(){
-	bottomImg=loadImage("images/dustbingreen1.png")
+	bottomImg=loadImage("dustbingreen1.png")
 }
 
 function setup() {
